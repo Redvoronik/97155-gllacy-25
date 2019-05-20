@@ -23,9 +23,15 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search-button"></li>
-          <li class="login-link">Вход</li>
-          <li class="empty-cart-link">Пусто</li>
+          <li>
+            <a class="search" href="search.html" id="search">Поиск</a>
+          </li>
+          <li>
+            <a class="login-link" href="login.html" id="login">Вход</a>
+          </li>
+          <li>
+            <a href="basket.html" class="empty-basket-link" id="basket">Пусто</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -88,11 +94,27 @@
       </ul>
       <p class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlacademy-logo.svg" width="120" height="50" alt="Логотип HtmlAcademy">
+          <img src="img/logo-htmlacademy-small.svg" width="120" height="50" alt="Логотип HtmlAcademy">
         </a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
+
+    <section class="modal modal-search" id="search">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="search" placeholder="Что ищем?">
+      </form>
+    </section>
+
+    <section class="modal modal-login" id="login">
+      <form class="logiin-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="email" placeholder="Электронная почта?">
+        <input type="password" name="password" placeholder="Пароль">
+        <button class="button" type="button">Войти</button>
+        <a href="restore-password.html">Забыли пароль?</a>
+        <a href="registration.html">Новая регистрация</a>
+      </form>
+    </section>
 
   </body>
 </html>
