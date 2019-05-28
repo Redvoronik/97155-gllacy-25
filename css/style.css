@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.site-navigation,
+.user-navigation,
+.submenu,
+.breadcrumbs {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a,
+.submenu a {
+  color: #ffffff;
+}
+
+.site-navigation {
+  line-height: 18px;
+}
+
+.site-navigation a:hover {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.user-navigation a {
+  text-decoration: none;
+  background-color: #9db1a5;
+}
+
+.user-navigation a:hover {
+  text-decoration: none;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.submenu {
+  display: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.features {
+  color: #323232;
+  background-color: #e9ddc4;
+  background-image: url('../img/waffle.jpg');
+  font-weight: 400;
+}
+
+.features h1 {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.blog-article {
+  background-color: #ffffff;
+  background-image: url('../img/strawberry-background.jpg');
+  background-repeat: no-repeat;
+}
+
+.blog-article span {
+  color: #323232;
+  font-weight: 500;
+}
+
+.blog-article h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-article a {
+  color: #323232;
+}
+
+.blog-article a:hover,
+.blog-article a:active {
+  color: #e84d37;
+}
+
+.subscribe {
+  font-weight: 400;
+  color: #5a5a5a;
+  background-color: #f8f7f4;
+  background-image: url('../img/postal-background.svg');
+  background-repeat:  no-repeat;
+}
+
+.subscribe input[type="text"] {
+  font: inherit;
+  color: #323232;
+  line-height: 24px;
+  background-color: #ffffff;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  width: 269px;
+  height: 46px;
+}
+
+.subscribe input[type="text"]:hover {
+  border: 2px solid #9a9a9a;
+  width: 267px;
+  height: 44px;
+}
+
+.subscribe input[type="text"]:focus {
+  border: 2px solid #2e88e4;
+  width: 267px;
+  height: 44px;
+}
+
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #f06341;
+  border: none;
+  border-radius: 20px;
+  box-shadow:  0 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #f07a63;
+  box-shadow:  0 2px 2px 0 rgba(172, 16, 0, 0.004);
+}
+
+.button:active {
+  box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 0.004);
+}
+
+.subscribe .button {
+  width: 129px;
+  height: 44px;
+}
+
+.footer-social li,
+.footer-partners li {
+  list-style: none;
+}
+
+.footer-partners {
+  text-align: center;
+}
+
+.main-footer a {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.main-footer a:hover,
+.main-footer a:active {
+  color: #ffbc9e;
+}
+
+.favorite-item a {
+  font-weight: 700;
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+}
+
+.modal {
+  display: none;
+}
