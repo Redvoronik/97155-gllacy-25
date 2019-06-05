@@ -8,12 +8,43 @@ body {
   background-color: #849d8f;
 }
 
+.main-header {
+  min-height: 115px;
+  margin-bottom: 45px;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  width: 100%;
+  margin-top: 9px;
+  margin-bottom: 2px;
+}
+
+.container {
+  width: 1146px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 27px;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
+  margin-right: 24px;
+}
+
 .site-navigation,
 .user-navigation,
 .submenu,
 .breadcrumbs,
 .catalog-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a,
@@ -24,6 +55,13 @@ body {
 
 .site-navigation {
   line-height: 18px;
+  width: 409px;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation li {
+  margin-right: 28px;
 }
 
 .site-navigation a:hover {
@@ -39,6 +77,15 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  width: 267px;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-navigation li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .user-navigation a {
@@ -52,9 +99,16 @@ body {
   background-color: #f8f7f4;
 }
 
+.main-header-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .work-time {
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 8px;
 }
 
 .phone-number {
@@ -111,28 +165,76 @@ body {
   color: #323232;
   background-color: #e9ddc4;
   background-image: url('../img/waffle.jpg');
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-left: 21px;
+  margin-bottom: 40px;
 }
 
 .features h1 {
   font-size: 25px;
   font-weight: 500;
   line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features-list p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.features-list p:nth-child(odd) {
+  width: 475px;
+  margin-right: 34px;
+}
+
+.features-list p:nth-child(even) {
+  width: 469px;
+}
+
+.column-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
 }
 
 .blog-article {
   background-color: #fff;
   background-image: url('../img/strawberry-background.jpg');
   background-repeat: no-repeat;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-top: 23px;
+  box-sizing: border-box;
 }
 
 .blog-article span {
   font-weight: 500;
   color: #323232;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .blog-article h2 {
   font-size: 24px;
   line-height: 30px;
+  padding: 0;
+  margin: 0;
+  width: 280px;
 }
 
 .blog-article a {
@@ -150,28 +252,54 @@ body {
   background-color: #f8f7f4;
   background-image: url('../img/postal-background.svg');
   background-repeat: no-repeat;
+  width: 560px;
+  min-height: 220px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 4px 5px 5px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-content {
+  width: 549px;
+  height: 211px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+  padding: 30px 20px 35px 20px;
+}
+
+.subscribe-content p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .subscribe input[type='text'] {
   font: inherit;
   line-height: 24px;
-  width: 269px;
-  height: 46px;
+  width: 368px;
+  min-height: 46px;
   color: #323232;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
   background-color: #fff;
+  box-sizing: border-box;
+  padding-left: 15px;
+  margin-right: 8px;
 }
 
 .subscribe input[type='text']:hover {
-  width: 267px;
-  height: 44px;
+  width: 368px;
+  min-height: 46px;
   border: 2px solid #9a9a9a;
 }
 
 .subscribe input[type='text']:focus {
-  width: 267px;
-  height: 44px;
+  width: 368px;
+  min-height: 46px;
   border: 2px solid #2e88e4;
 }
 
@@ -200,13 +328,40 @@ body {
   height: 44px;
 }
 
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social ul {
+  display: flex;
+  width: 267px;
+}
+
+.footer-social li {
+  margin-right: 11px;
+}
+
 .footer-social li,
 .footer-partners li {
   list-style: none;
 }
 
+.footer-social ul,
+.footer-partners ul {
+  padding: 0;
+}
+
+
 .footer-partners {
-  text-align: center;
+  display: flex;
+  width: 333px;
+  flex-wrap: wrap;
+}
+
+.footer-partners-left {
+  margin-right: 32px;
 }
 
 .main-footer a {
@@ -235,6 +390,14 @@ body {
   font-weight: 400;
   line-height: 18px;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-copyright p {
+  padding: 0;
+  margin: 0;
 }
 
 .footer-copyright a {

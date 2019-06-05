@@ -9,10 +9,10 @@
   </head>
   <body>
     <header class="main-header">
+      <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="160" height="80" alt="Логотип магазина по продаже мороженного «Глейси»">
         </a>
-      <nav class="main-navigation">
         <ul class="site-navigation">
           <li>
             <a class="button site-navigation-current" href="catalog.html">Каталог</a>
@@ -199,7 +199,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
@@ -208,18 +208,24 @@
           <li><a class="social-button" href="#">Vkontakte</a></li>
         </ul>
       </div>
-      <ul class="footer-partners">
-        <li class="favorite-item"><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <p class="footer-copyright">
+      <div class="footer-partners">
+         <ul class="footer-partners-left">
+          <li class="favorite-item"><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+        </ul>
+        <ul class="footer-partners-right">
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy-small.svg" width="120" height="50" alt="Логотип HtmlAcademy">
+          <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HtmlAcademy">
         </a>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-      </p>
+        <p>
+          Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+        </p>
+      </div>
     </footer>
 
         <section class="modal modal-search" id="search">
