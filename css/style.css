@@ -4,7 +4,7 @@ body {
   font-weight: 700;
   line-height: 22px;
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   background-color: #849d8f;
 }
 
@@ -13,8 +13,8 @@ body {
   margin-bottom: 45px;
 }
 
-.main-navigation {
-  display: flex;
+.inner-page {
+  margin-bottom: 0;
 }
 
 .main-navigation-wrapper {
@@ -35,6 +35,7 @@ body {
   width: 154px;
   height: 64px;
   margin-right: 24px;
+  display: block;
 }
 
 .site-navigation,
@@ -50,7 +51,7 @@ body {
 .site-navigation a,
 .user-navigation a,
 .submenu a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .site-navigation {
@@ -66,11 +67,13 @@ body {
 
 .site-navigation a:hover {
   color: #323232;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .site-navigation-current {
   text-decoration: none;
+  width: 100px;
+  min-height: 32px;
 }
 
 .user-navigation {
@@ -120,11 +123,18 @@ body {
   display: none;
 }
 
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 13px;
+}
+
 .breadcrumbs a {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  color: #fff;
+  color: #ffffff;
+  display: block;
+  margin-right: 20px;
 }
 
 .breadcrumbs-current {
@@ -133,14 +143,43 @@ body {
   line-height: 16px;
 }
 
+.catalog {
+  margin-bottom: 77px;
+}
+
 .catalog-title {
   font-size: 35px;
   line-height: 41px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog-list-item {
+  width: 267px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.catalog-list-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-list-item h2 {
+  padding: 0;
+  margin: 0;
 }
 
 .product-link {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .catalog-item-price {
@@ -211,7 +250,7 @@ body {
 }
 
 .blog-article {
-  background-color: #fff;
+  background-color: #ffffff;
   background-image: url('../img/strawberry-background.jpg');
   background-repeat: no-repeat;
   width: 560px;
@@ -285,7 +324,7 @@ body {
   color: #323232;
   border: 1px solid #b2b2b2;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-sizing: border-box;
   padding-left: 15px;
   margin-right: 8px;
@@ -306,7 +345,7 @@ body {
 .button {
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
+  color: #ffffff;
   border: none;
   border-radius: 20px;
   background-color: #f06341;
@@ -328,10 +367,49 @@ body {
   height: 44px;
 }
 
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.pagination-list li {
+  margin-right: 11px;
+}
+
+.pagination-list a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.pagination-list li:first-child {
+  color: #000000;
+  display: block;
+  width: 27px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+}
+
+hr {
+  width: 1146px;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #ffffff;
+}
+
 .main-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 35px;
 }
 
 .footer-social ul {
@@ -368,7 +446,7 @@ body {
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .main-footer a:hover,
@@ -382,7 +460,7 @@ body {
 
 .footer-social a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer-copyright {
@@ -401,7 +479,7 @@ body {
 }
 
 .footer-copyright a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .modal {
