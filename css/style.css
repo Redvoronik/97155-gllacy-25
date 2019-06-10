@@ -8,6 +8,26 @@ body {
   background-color: #849d8f;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-header {
   min-height: 115px;
   margin-bottom: 45px;
@@ -155,7 +175,6 @@ body {
   left: 6px;
 }
 
-
 .user-navigation {
   font-size: 14px;
   font-weight: 500;
@@ -180,6 +199,72 @@ body {
   text-decoration: none;
   color: #323232;
   background-color: #f8f7f4;
+}
+
+.search {
+  width: 33px;
+  height: 33px;
+  display: block;
+  vertical-align: baseline;
+  border-radius: 50%;
+  background-image: url('../img/loupe.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.search:hover {
+  background-image: url('../img/loupe-black.svg');
+}
+
+.login-link {
+  display: block;
+  vertical-align: baseline;
+  position: relative;
+  padding: 9px 15px 9px 40px;
+  margin-bottom: 5px;
+  border-radius: 16px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.login-link:hover::before {
+  background-image: url("../img/login-black.svg");
+}
+
+.empty-basket-link {
+  display: block;
+  vertical-align: baseline;
+  position: relative;
+  padding: 9px 15px 9px 40px;
+  margin-bottom: 5px;
+  border-radius: 16px;
+}
+
+.empty-basket-link::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 21px;
+  height: 19px;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.empty-basket-link:hover::before {
+    background-image: url("../img/basket-black.svg");
 }
 
 .main-header-contacts {
