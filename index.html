@@ -31,9 +31,27 @@
         <ul class="user-navigation">
           <li>
             <a class="search" href="search.html" id="search"><span class="visually-hidden">Поиск</span></a>
+            <section class="modal-search" id="search">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </form>
+            </section>
           </li>
           <li>
             <a class="login-link" href="login.html" id="login">Вход</a>
+            <section class="modal-login" id="login">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <input type="text" name="email" placeholder="Электронная почта?">
+                <input type="password" name="password" placeholder="Пароль">
+                <div class="login-form-container">
+                  <button class="button login-button" type="button">Войти</button>
+                  <div class="login-form-links">
+                    <a href="restore-password.html">Забыли пароль?</a>
+                    <a href="registration.html">Новая регистрация</a>
+                  </div>
+                </div>
+              </form>
+            </section>
           </li>
           <li>
             <a href="basket.html" class="empty-basket-link" id="basket">Пусто</a>
@@ -88,8 +106,10 @@
           <p>
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <input type="text" name="email" placeholder="Электронная почта">
-          <button class="button" type="submit">Отправить</button>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="text" name="email" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </div>
       </section>
     </div>
@@ -100,10 +120,10 @@
   <footer class="main-footer container">
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#">Twitter</a></li>
-        <li><a class="social-button" href="#">Instagram</a></li>
-        <li><a class="social-button" href="#">Facebook</a></li>
-        <li><a class="social-button" href="#">Vkontakte</a></li>
+        <li><a class="social-button twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button vkontakte" href="#"><span class="visually-hidden">Vkontakte</span></a></li>
       </ul>
     </div>
     <div class="footer-partners">
@@ -126,28 +146,12 @@
     </div>
   </footer>
 
-  <section class="modal modal-search" id="search">
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="text" name="search" placeholder="Что ищем?">
-    </form>
-  </section>
-
-  <section class="modal modal-login" id="login">
-    <form class="logiin-form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="text" name="email" placeholder="Электронная почта?">
-      <input type="password" name="password" placeholder="Пароль">
-      <button class="button" type="button">Войти</button>
-      <a href="restore-password.html">Забыли пароль?</a>
-      <a href="registration.html">Новая регистрация</a>
-    </form>
-  </section>
-
-  <section class="modal modal-contact">
+  <section class="modal-contact">
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-contact-heading">
         Мы обязательно вам ответим!
       </p>
-      <button class="modal-close" type="button">Закрыть
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span>
         <img src="img/cross-big.svg" alt="Закрыть форму контактов">
       </button>
       <input type="text" name="contact-name" placeholder="Как вас зовут?">
