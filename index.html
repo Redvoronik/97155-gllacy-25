@@ -10,6 +10,11 @@
 </head>
 
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
+  <div class="container">
   <header class="main-header">
     <nav class="main-navigation">
       <div class="main-navigation-wrapper container">
@@ -69,8 +74,119 @@
     </div>
   </header>
 
-  <main class="container">
-    <!--Тут будет разметка сладйера-->
+  <main>
+   
+    <section class="slider">
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+    <ul class="slider-list">
+      <li class="slider-item slide" id="slide1">
+         <h3 class="slide-title">
+            Крем-брюле и пломбир с малиновым джемом
+          </h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
+      </li>
+      <li class="slider-item slide" id="slide2">
+        <h3 class="slide-title">
+          Шоколадный пломбир и лимонный сорбет
+        </h3>
+        <a class="button slide-button" href="#">Давайте оба!</a>
+      </li>
+      <li class="slider-item slide" id="slide3">
+        <h3 class="slide-title">
+          Пломбир с помадкой и клубничный щербет
+        </h3>
+        <a class="button slide-button" href="#">Давайте оба!</a>
+       </li>
+    </ul>
+   </section>
+    <div class="column-container">
+      <section class="raspberry-gift">
+        <h2>Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <div class="button-container">
+          <a href="#" class="button">Хочу варенье!</a>
+        </div>
+      </section>
+      <section class="chocolate-gift">
+        <h2>Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <div class="button-container">
+          <a href="#" class="button">Хочу шоколадки!</a>
+        </div>
+      </section>
+    </div>
+    <section class="mini-catalog">
+      <ul class="catalog-list">
+        <li class="catalog-list-item">
+          <div class="hover-wrapper">
+            <img src="img/icecream-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p class="catalog-item-price">
+              <b>310 ₽</b>
+              <span class="item-price-weight">/кг</span>
+            </p>
+            <a href="#" class="product-link">
+            <h2 class="catalog-item-heading">
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </h2>
+            </a>
+            <a href="#" class="button preview-button">Быстрый просмотр</a>
+            <div class="overlay"></div>
+          </div>
+        </li>
+        <li class="catalog-list-item">
+          <div class="hover-wrapper">
+            <img src="img/icecream-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="catalog-item-price">
+              <b>380 ₽</b>
+              <span class="item-price-weight">/кг</span>
+            </p>
+            <a href="#" class="product-link">
+            <h2 class="catalog-item-heading">
+              Сливочно-кофейное с кусочками шоколада
+            </h2>
+            </a>
+            <a href="#" class="button preview-button">Быстрый просмотр</a>
+            <div class="overlay"></div>
+          </div>
+        </li>
+        <li class="catalog-list-item">
+          <div class="hover-wrapper">
+            <img src="img/icecream-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="catalog-item-price">
+              <b>355 ₽</b>
+              <span class="item-price-weight">/кг</span>
+            </p>
+            <a href="#" class="product-link">
+            <h2 class="catalog-item-heading">
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </h2>
+            </a>
+            <a href="#" class="button preview-button">Быстрый просмотр</a>
+            <div class="overlay"></div>
+          </div>
+        </li>
+        <li class="catalog-list-item">
+          <div class="hover-wrapper">
+            <img src="img/icecream-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="catalog-item-price">
+              <b>415 ₽</b>
+              <span class="item-price-weight">/кг</span>
+            </p>
+            <a href="#" class="product-link">
+            <h2 class="catalog-item-heading">
+              Сливочное крем-брюле с карамельной подливкой
+            </h2>
+            </a>
+            <a href="#" class="button preview-button">Быстрый просмотр</a>
+            <div class="overlay"></div>
+          </div>
+        </li>
+      </ul>
+  </section>
     <section class="features">
       <h1>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
       <ul class="features-list">
@@ -113,8 +229,10 @@
         </div>
       </section>
     </div>
-
-    <!--Тут будет разметка карты-->
+  </div>
+    <section class="map">
+      <img src="img/map.jpg" alt="Как нас найти" width="1200" height="412">
+    </section>
   </main>
 
   <footer class="main-footer container">
@@ -145,6 +263,7 @@
       </p>
     </div>
   </footer>
+  </div>
 
   <section class="modal-contact">
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
