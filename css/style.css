@@ -29,12 +29,11 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  min-height: 115px;
-  margin-bottom: 324px;
+  margin-bottom: 372px;
 }
 
 .main-header.inner-page {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
 }
 
 .site-wrapper {
@@ -311,7 +310,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border: 0;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 11px 25px 11px 25px;
   font-size: 18px;
   line-height: 24px;
@@ -575,6 +574,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  position: absolute;
 }
 
 .work-time {
@@ -1113,13 +1113,64 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   height: 412px;
   margin: 0 auto;
-  
+  position: relative;
   outline: 1px solid blue;
 }
 
 .map img {
   outline: 1px solid yellow;
   border: 0px;
+}
+
+.pin {
+  position: absolute;
+  top: 129px;
+  left: 276px;
+  width: 80px;
+  height: 140px;
+  background-image: url("../img/map-icecream.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+.map-contact {
+  position: absolute;
+  top: 59px;
+  right: 27px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 25px 32px 25px;
+  color: #323232;
+}
+
+.map-contact p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.map-contact a {
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+
+.map-contact p:nth-child(2) {
+  margin-bottom: 17px;
+}
+
+.map-contact p:nth-child(2),
+.map-contact p:nth-child(4) {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.map-contact p:nth-child(5) {
+  margin-bottom: 20px;
 }
 
 .pagination-list {
@@ -1130,6 +1181,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-end;
   margin-bottom: 30px;
 }
+
 
 .pagination-list li {
   display: flex;
