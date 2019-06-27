@@ -1398,7 +1398,7 @@ input[type="radio"].visually-hidden {
 .map {
   width: 1200px;
   height: 412px;
-  margin: 0 auto;
+  margin: 0 -27px;
   position: relative;
 }
 
