@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси - каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                 </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
+              <li><a href="#">О Компании</a></li>
             </ul>
             <ul class="user-navigation">
               <li>
@@ -110,7 +110,7 @@
           <li><a href="catalog.html">Каталог</a></li>
           <li class="breadcrumbs-current">Сливочное</li>
         </ul>
-        <h1 class="catalog-title">Сливочное мороженное</h1>
+        <h1 class="catalog-title">Сливочное мороженое</h1>
         <form class="filter" action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-first-row">
             <div class="filter-sorting">
@@ -125,7 +125,7 @@
               </div>
             </div>
             <div class="filter-price">
-              <p class="filter-title">Цена: 100 руб. - 500 руб.</p>
+              <p class="filter-title">Цена: 100 руб. &mdash; 500 руб.</p>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -140,11 +140,11 @@
               <p class="filter-title">Жирность:</p>
               <div class="filter-fat-wrapper">
                 <div class="custom-radio">
-                  <input type="radio" name="fat-percent" value="0" id="first-radio" class="visually-hidden">
+                  <input type="radio" name="fat-percent" value="0" id="first-radio" class="visually-hidden" disabled>
                   <label for="first-radio" class="radio-label">0%</label>
                 </div>
                 <div class="custom-radio">
-                  <input type="radio" name="fat-percent" value="10" id="second-radio" class="visually-hidden" checked>
+                  <input type="radio" name="fat-percent" value="10" id="second-radio" class="visually-hidden" checked disabled>
                   <label for="second-radio" class="radio-label">до 10%</label>
                 </div>
                 <div class="custom-radio">
@@ -184,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <button class="filter-button" type="submit">Показать</button>
+            <button class="filter-button" type="submit">Применить</button>
           </div>
         </form>
         <section class="catalog">
