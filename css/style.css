@@ -5,13 +5,17 @@ body {
   line-height: 22px;
   margin: 0;
   color: #ffffff;
-/*  background-color: #849d8f;*/
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -289,6 +293,7 @@ input[type="radio"].visually-hidden {
 .modal-search input[type="text"]:focus {
   border: 2px solid #2e88e4;
   margin: -1px;
+  font-weight: bold;
 }
 
 .user-navigation li:first-child:hover .modal-search {
@@ -366,6 +371,7 @@ input[type="radio"].visually-hidden {
   border: 2px solid #2e88e4;
   margin: -1px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .login-form {
@@ -824,9 +830,8 @@ input[type="radio"].visually-hidden {
   left: 15px;
   width: 16px;
   height: 16px;
-  border: 4px solid #ffffff;
+  border: 4px solid #e6ebe9;
   border-radius: 50%;
-  opacity: 0.8;
 }
 
 .radio-label::after {
@@ -836,21 +841,34 @@ input[type="radio"].visually-hidden {
   left: 23px;
   width: 8px;
   height: 8px;
-  background-color: #ffffff;
+  background-color: #e6ebe9;
   border-radius: 50%;
   opacity: 0;
 }
 
 .custom-radio input[type="radio"]:checked + .radio-label::after {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .radio-label:hover::before {
-  opacity: 1;
+  border-color: #ffffff;
 }
 
 .custom-radio input[type="radio"]:checked + .radio-label:hover::after {
+  background-color: #ffffff;
   opacity: 1;
+}
+
+.custom-radio input[type="radio"]:disabled + .radio-label::before {
+  border-color: #b5c4bc;
+}
+
+.custom-radio input[type="radio"]:disabled + .radio-label::after {
+  background-color: #b5c4bc;
+}
+
+.custom-radio input[type="radio"]:disabled + .radio-label:hover::after {
+  background-color: #b5c4bc;
 }
 
 .custom-checkbox {
@@ -910,6 +928,31 @@ input[type="radio"].visually-hidden {
 .custom-checkbox input[type="checkbox"]:checked + .checkbox-label:hover::after {
   opacity: 1;
 }
+
+.custom-checkbox input[type="checkbox"]:checked:disabled + .checkbox-label::after {
+  opacity: 0.4;
+}
+
+.custom-checkbox input[type="checkbox"]:checked:disabled + .checkbox-label::before {
+  opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked:disabled + .checkbox-label:hover::after {
+  opacity: 0.4;
+}
+
+.custom-checkbox input[type="checkbox"]:checked:disabled + .checkbox-label:hover::before {
+  opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:disabled + .checkbox-label::before {
+  opacity: 0.4;
+}
+
+.custom-checkbox input[type="checkbox"]:disabled + .checkbox-label:hover::before {
+  opacity: 0.4;
+}
+
 
 .filter-button {
   width: 144px;
@@ -1151,13 +1194,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/slider-item3.png");
 }
 
-.raspberry-gift,
-.chocolate-gift {
+.raspberry-gift {
   background-color: #780612;
   background-image: url('../img/raspberry-background.jpg');
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 560px;
-  min-height: 229px;
   border-radius: 15px;
   padding-left: 18px;
   padding-top: 16px;
@@ -1169,6 +1210,15 @@ input[type="radio"].visually-hidden {
 .chocolate-gift {
   background-color: ##522513;
   background-image: url('../img/chocolate-background.jpg');
+  background-repeat: round;
+  width: 560px;
+  border-radius: 15px;
+  padding-left: 18px;
+  padding-top: 16px;
+  padding-right: 19px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
 }
 
 .raspberry-gift h2,
@@ -1197,6 +1247,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  margin-bottom: 23px;
 }
 
 .mini-catalog {
@@ -1421,6 +1472,7 @@ input[type="radio"].visually-hidden {
 
 .subscribe input[type='text']:focus {
   border: 2px solid #2e88e4;
+  font-weight: bold;
   margin-left: -1px;
   margin-top: -1px;
   margin-bottom: -1px;
@@ -1772,6 +1824,7 @@ hr {
   border: 2px solid #2e88e4;
   margin: -1px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .contact-form textarea {
