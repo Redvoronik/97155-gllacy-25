@@ -846,6 +846,20 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
+input[type="radio"]:focus + .radio-label::before {
+/*
+  outline: 2px solid #2f7cc0;
+  outline-offset: 2px;
+*/
+  box-shadow:  0 0 0 2px #2f7cc0;
+}
+
+input[type="checkbox"]:focus + .checkbox-label::before,
+input[type="checkbox"]:focus + .checkbox-label::after {
+  box-shadow: 0 0 0 2px #2f7cc0;
+}
+
+
 .custom-radio input[type="radio"]:checked + .radio-label::after {
   opacity: 1;
 }
@@ -953,7 +967,6 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-
 .filter-button {
   width: 144px;
   height: 37px;
@@ -1018,15 +1031,14 @@ input[type="radio"].visually-hidden {
 
 .hover-wrapper {
   width: 293px;
-  min-height: 405px;
   box-sizing: border-box;
   padding-top: 6px;
   padding-left: 13px;
   padding-right: 13px;
+  position: relative;
   margin-left: -13px;
   margin-right: -13px;
   margin-bottom: -22px;
-  position: absolute;
 }
 
 .hover-wrapper * {
@@ -1041,6 +1053,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 72px;
   opacity: 0.2;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
@@ -1051,6 +1064,8 @@ input[type="radio"].visually-hidden {
 .preview-button {
   display: none;
   text-decoration: none;
+  position: absolute;
+  left: 40px;
 }
 
 .catalog-list-item:hover .overlay {
@@ -1058,8 +1073,15 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list-item:hover .preview-button {
-  display: inline-block;
-  vertical-align: baseline;
+  display: block;
+}
+
+.product-link:focus ~ .overlay {
+  display: block;
+}
+
+.product-link:focus ~ .preview-button {
+  display: block;
 }
 
 .catalog-list-item p {
@@ -1142,7 +1164,6 @@ input[type="radio"].visually-hidden {
   bottom: 22px;
   left: 0;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -1177,6 +1198,12 @@ input[type="radio"].visually-hidden {
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
   background-color: #ffffff;
+}
+
+#product-1:focus ~ .site-wrapper label[for="product-1"],
+#product-2:focus ~ .site-wrapper label[for="product-2"],
+#product-3:focus ~ .site-wrapper label[for="product-3"] {
+  box-shadow:  0 0 0 2px #2f7cc0;
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -1386,7 +1413,7 @@ input[type="radio"].visually-hidden {
 .blog-article {
   background-color: #ffffff;
   background-image: url('../img/strawberry-background.jpg');
-  background-repeat: no-repeat;
+  background-repeat: round;
   width: 560px;
   min-height: 220px;
   border-radius: 15px;
@@ -1424,9 +1451,8 @@ input[type="radio"].visually-hidden {
   color: #5a5a5a;
   background-color: #f8f7f4;
   background-image: url('../img/postal-background.svg');
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   width: 560px;
-  min-height: 220px;
   border-radius: 15px;
   box-sizing: border-box;
   padding: 4px 5px 5px 6px;
@@ -1437,7 +1463,6 @@ input[type="radio"].visually-hidden {
 
 .subscribe-content {
   width: 549px;
-  height: 211px;
   border-radius: 10px;
   background-color: #f8f7f4;
   box-sizing: border-box;
@@ -1635,6 +1660,7 @@ hr {
 
 .footer-social ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   width: 267px;
