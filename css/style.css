@@ -1524,6 +1524,10 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   background-color: #e2e5bf;
 }
 
+.map iframe {
+  border: 0;
+}
+
 .map img {
   border: 0px;
 }
