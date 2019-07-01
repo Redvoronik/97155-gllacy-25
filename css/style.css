@@ -12,10 +12,21 @@ img {
   height: auto;
 }
 
-input:focus::-webkit-input-placeholder { color:transparent; }
-input:focus:-moz-placeholder { color:transparent; }
-input:focus::-moz-placeholder { color:transparent; }
-input:focus:-ms-input-placeholder { color:transparent; }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -676,7 +687,6 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   margin-bottom: 6px;
   padding-left: 15px;
-
 }
 
 .custom-select {
@@ -787,10 +797,10 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .filter-fillers-wrapper {
@@ -809,9 +819,10 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
+
 .custom-radio input {
   -webkit-appearance: none;
   appearance: none;
@@ -847,11 +858,7 @@ input[type="radio"].visually-hidden {
 }
 
 input[type="radio"]:focus + .radio-label::before {
-/*
-  outline: 2px solid #2f7cc0;
-  outline-offset: 2px;
-*/
-  box-shadow:  0 0 0 2px #2f7cc0;
+  box-shadow: 0 0 0 2px #2f7cc0;
 }
 
 input[type="checkbox"]:focus + .checkbox-label::before,
@@ -1203,7 +1210,7 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 #product-1:focus ~ .site-wrapper label[for="product-1"],
 #product-2:focus ~ .site-wrapper label[for="product-2"],
 #product-3:focus ~ .site-wrapper label[for="product-3"] {
-  box-shadow:  0 0 0 2px #2f7cc0;
+  box-shadow: 0 0 0 2px #2f7cc0;
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -1245,7 +1252,6 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   padding-right: 19px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 .raspberry-gift h2,
@@ -1559,7 +1565,6 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   margin-bottom: 1px;
 }
 
-
 .map-contact p:nth-child(2),
 .map-contact p:nth-child(4) {
   font-size: 18px;
@@ -1579,7 +1584,6 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   justify-content: flex-end;
   margin-bottom: 27px;
 }
-
 
 .pagination-list li {
   display: flex;
@@ -1796,7 +1800,7 @@ hr {
 .modal-contact {
   display: none;
   position: fixed;
-  top: 337px;
+  top: 20%;
   left: 50%;
   width: 478px;
   margin-left: -239px;
@@ -1920,7 +1924,6 @@ hr {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     transform: translateX(0);
