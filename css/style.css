@@ -1100,6 +1100,8 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 }
 
 .catalog-list-item h2 {
+  width: 258px;
+  left: 5px;
   margin: 0;
   margin-top: 7px;
   margin-bottom: 8px;
@@ -1119,6 +1121,7 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 .item-price-weight {
   font-size: 30px;
   line-height: 45px;
+  right: 5px;
 }
 
 .catalog-item-heading {
@@ -1242,7 +1245,7 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 }
 
 .chocolate-gift {
-  background-color: ##522513;
+  background-color: #522513;
   background-image: url('../img/chocolate-background.jpg');
   background-repeat: round;
   width: 560px;
@@ -1318,7 +1321,7 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   line-height: 30px;
   padding: 0;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 }
 
 .features-list {
@@ -1388,11 +1391,11 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 }
 
 .features-list p {
-  width: 469px;
+  width: 476px;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  margin-right: 34px;
+  margin-right: 27px;
 }
 
 .column-container {
@@ -1412,7 +1415,7 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 
@@ -1517,9 +1520,8 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 }
 
 .map {
-  width: 1200px;
+  width: 100%;
   height: 430px;
-  margin: 0 -27px;
   position: relative;
   background-color: #e2e5bf;
 }
@@ -1534,11 +1536,11 @@ input[type="checkbox"]:focus + .checkbox-label::after {
 
 .map-contact {
   position: absolute;
-  top: 61px;
-  right: 28px;
+  top: 64px;
+  right: 68px;
   background-color: #ffffff;
   border-radius: 15px;
-  padding: 30px 29px 27px 25px;
+  padding: 28px 29px 27px 25px;
   color: #323232;
 }
 
@@ -1600,7 +1602,16 @@ input[type="checkbox"]:focus + .checkbox-label::after {
   text-align: center;
   padding: 7px;
   border-radius: 50%;
-  margin-right: 2px;
+  margin-right: 4px;
+  margin-top: 2px;
+}
+
+.pagination-list .previous-pagination-page {
+  margin-right: 5px;
+}
+
+.pagination-list .next-pagination-page {
+  margin-right: -8px;
 }
 
 .pagination-list a {
@@ -1782,7 +1793,7 @@ hr {
 }
 
 .footer-copyright {
-  font-size: 13px;
+  width: 188px;
   font-weight: 400;
   line-height: 18px;
   display: flex;
@@ -1799,6 +1810,10 @@ hr {
 
 .footer-copyright a {
   color: #ffffff;
+}
+
+.footer-logo {
+  margin-top: 1px;
 }
 
 .modal-contact {
