@@ -130,7 +130,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a {
   display: block;
-  vertical-align: middle;
   padding: 9px 13px;
   margin-bottom: 5px;
 }
@@ -259,7 +258,6 @@ input[type="radio"].visually-hidden {
   width: 33px;
   height: 33px;
   display: block;
-  vertical-align: baseline;
   border-radius: 50%;
   background-image: url('../img/loupe.svg');
   background-repeat: no-repeat;
@@ -420,7 +418,6 @@ input[type="radio"].visually-hidden {
 
 .login-link {
   display: block;
-  vertical-align: baseline;
   position: relative;
   padding: 9px 17px 9px 43px;
   margin-bottom: 5px;
@@ -445,7 +442,6 @@ input[type="radio"].visually-hidden {
 
 .empty-basket-link {
   display: block;
-  vertical-align: baseline;
   position: relative;
   padding: 9px 17px 9px 43px;
   margin-bottom: 5px;
@@ -470,7 +466,6 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .full-basket-link {
   display: block;
-  vertical-align: baseline;
   position: relative;
   padding: 9px 16px 9px 44px;
   margin-bottom: 5px;
